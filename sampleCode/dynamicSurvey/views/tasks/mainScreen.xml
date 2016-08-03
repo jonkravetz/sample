@@ -1,0 +1,21 @@
+<Alloy>
+    <View id="wrapper">
+        <ListView id="tasksListView" defaultItemTemplate="itemTemplate1">
+            <SearchBar id="searchBar" />
+            <Templates>
+                <ItemTemplate id="template1" name="itemTemplate1">
+                    <View id="container">
+                        <View bindId="statusImage" id="statusImage" />
+                        <Label bindId="name" id="nameLabel" />
+                        <Label bindId="dueDateHeader" id="dueDateHeader" />
+                        <Label bindId="dueDate" id="dueDateLabel" />
+                        <Label bindId="contactInfo" id="contactInfo" />
+                        <Label bindId="taskSource" id="taskSource" />
+
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+    </View>
+</Alloy>

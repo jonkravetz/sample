@@ -1,0 +1,32 @@
+<Alloy>
+    <View id="wrapper">
+        <ListView id="hcaListView" defaultItemTemplate="itemTemplate1">
+            <SearchBar id="searchBarHCA" />
+            <Templates>
+                <ItemTemplate id="template1" name="itemTemplate1">
+                    <View id="container">
+                        <Label bindId="Name" id="nameLabel" />
+                        <Label bindId="Phone" id="phoneLabel" />
+                        <Label bindId="Address" id="addressLabel" />
+                        <View id="siteAgreementLabelContainer">
+                            <Label bindId="siteAgreementLabel" id="siteAgreementLabel" />
+                            <View bindId="siteAgreementIcon" id="siteAgreementIcon" />
+                        </View>
+                    </View>
+                </ItemTemplate>
+            </Templates>
+        </ListView>
+        <ListView id="hcpListView" defaultItemTemplate="itemTemplate2">
+            <SearchBar id="searchBar" />
+            <Templates>
+                <ItemTemplate id="template2" name="itemTemplate2">
+                    <View id="container">
+                        <Label bindId="Name" id="nameLabel" />
+                        <Label bindId="Phone" id="phoneLabel" />
+                        <Label bindId="Address" id="addressLabel" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+        </ListView>
+    </View>
+</Alloy>

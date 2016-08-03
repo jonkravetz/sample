@@ -1,0 +1,27 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="selectListView" defaultItemTemplate="itemTemplate">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <View bindId="IsSelected" id="selectedImage" />
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="template" name="navigateTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <View id="navigateImage" />
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="template" name="toggleTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <Switch bindId="IsToggled" id="toggleSwitch" onChange="handleItemClickEvent" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+    </View>
+</Alloy>

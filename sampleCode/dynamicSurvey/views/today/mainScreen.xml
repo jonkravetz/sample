@@ -1,0 +1,64 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="topBarView">
+            <View id="backDateView" class="dateButtonView">
+                <View id="backDateImage" class="dateButtonImage" />
+            </View>
+            <Button id="todayButton" />
+            <View id="nextDateView" class="dateButtonView">
+                <View id="nextDateImage" class="dateButtonImage" />
+            </View>
+
+            <View id="dateView">
+                <Label id="dayNameLabel" />
+                <Label id="completeDateLabel" />
+                <View id="dropdownImage" />
+            </View>
+
+            <View id="patientView">
+                <Label id="thisMonthLabel" />
+                <View id="separatorView" />
+                <View id="patientsAmountView">
+                    <Label id="patientLabel" />
+                    <Label id="amountLabel" />
+                </View>
+            </View>
+
+            <View id="inserviceView">
+                <Label id="inservicesLabel" />
+                <View id="progresBarView">
+                    <View id="progressBarFill" />
+                    <Label id="progressBarLabel" />
+                </View>
+            </View>
+        </View>
+        <View id="tasksView">
+            <View id="taskHeaderView">
+                <Label id="taskHeaderLabel" />
+                <Button id="addTaskImage" />
+            </View>
+            <ListView id="tasksListView" defaultItemTemplate="itemTemplate1">
+                <Templates>
+                    <ItemTemplate id="template1" name="itemTemplate1">
+                        <View id="container">
+                            <View bindId="statusImage" id="statusImage" />
+                            <Label bindId="name" id="nameLabel" />
+                            <Label bindId="taskOrigin" id="originLabel" />
+                            <Label bindId="contactName" id="contactNameLabel" />
+                            <Label bindId="dueDateHeader" id="dueDateHeader" />
+                            <Label bindId="dueDate" id="dueDateLabel" />
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+                <ListSection/>
+            </ListView>
+        </View>
+        <View id="calendarView">
+            <WebView id="calendarWebView" />
+            <View id="calendarHeaderView">
+                <Label id="calendarHeaderLabel" />
+                <Button id="addEventImage" />
+            </View>
+        </View>
+    </View>
+</Alloy>

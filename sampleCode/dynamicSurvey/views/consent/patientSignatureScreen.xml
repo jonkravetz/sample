@@ -1,0 +1,18 @@
+<Alloy>
+    <View id="dialog">
+        <View id="signatureView">
+            <Label id="signatureInstructionLabel" />
+            <Label id="patientNameLabel" />
+            <Button id="clearSignatureButton" />
+            <Label class="requiredLabel" />
+            <PaintView platform="ios" ns="Alloy.Globals.Paint" id="signatureContent">
+                <View id="signatureContentView" />
+            </PaintView>
+        </View>
+        <Label id="dateLabel" />
+        <Label id="disclaimerLabel" />
+        <Label id="formInfoLabel" />
+        <Button id="bottomBackButton" />
+        <Button id="bottomNextButton" />
+    </View>
+</Alloy>

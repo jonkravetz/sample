@@ -1,0 +1,10 @@
+<Alloy>
+    <View id="popup">
+        <View id="form">
+            <View id="email" class="row">
+                <Label id="emailHeader" class="header" />
+                <TextField id="emailLabel" class="value" />
+            </View>
+        </View>
+    </View>
+</Alloy>

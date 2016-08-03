@@ -1,0 +1,41 @@
+<Alloy>
+    <View id="itemView">
+        <View id="contentView">
+            <View id="textContainerView">
+                <Label id="titleLabel" />
+                <Label id="bodyLabel" />
+            </View>
+            <View id="ratingContainer5View">
+                <Label id="ratingLeftTextLabel" />
+                <Button id="rating5Button1" class="ratingButton" />
+                <Button id="rating5Button2" class="ratingButton" />
+                <Button id="rating5Button3" class="ratingButton" />
+                <Button id="rating5Button4" class="ratingButton" />
+                <Button id="rating5Button5" class="ratingButton" />
+                <Label id="ratingRightTextLabel" />
+            </View>
+            <View id="ratingContainer10View">
+                <Label id="ratingLeftTextLabel" />
+                <Button id="rating10Button1" class="ratingButton" />
+                <Button id="rating10Button2" class="ratingButton" />
+                <Button id="rating10Button3" class="ratingButton" />
+                <Button id="rating10Button4" class="ratingButton" />
+                <Button id="rating10Button5" class="ratingButton" />
+                <Button id="rating10Button6" class="ratingButton" />
+                <Button id="rating10Button7" class="ratingButton" />
+                <Button id="rating10Button8" class="ratingButton" />
+                <Button id="rating10Button9" class="ratingButton" />
+                <Button id="rating10Button10" class="ratingButton" />
+                <Label id="ratingRightTextLabel" />
+            </View>
+            <View id="numberResponseContainerView">
+                <TextField id="numberResponseTextField" />
+            </View>
+            <View id="textResponseContainerView">
+                <TextField id="textResponseTextField" />
+            </View>
+            <View id="contentItems" />
+        </View>
+        <Button id="checkboxButton" />
+    </View>
+</Alloy>

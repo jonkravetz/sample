@@ -1,0 +1,22 @@
+<Alloy>
+    <View id="answerView">
+        <View id="activityContainer">
+            <View id="locationContainerView" class="container">
+                <Label id="locationHeaderLabel" class="header" />
+                <Label id="locationTextLabel" class="text" />
+            </View>
+            <View id="addressContainerView" class="container">
+                <Label id="addressHeaderLabel" class="header" />
+                <Label id="addressTextLabel" class="text" />
+            </View>
+            <View id="dateContainerView" class="container">
+                <Label id="dateHeaderLabel" class="header" />
+                <Label id="dateTextLabel" class="text" />
+            </View>
+            <View id="timeContainerView" class="container">
+                <Label id="timeHeaderLabel" class="header" />
+                <Label id="timeTextLabel" class="text" />
+            </View>
+        </View>
+    </View>
+</Alloy>

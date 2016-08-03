@@ -1,0 +1,11 @@
+<Alloy>
+    <View id="answerView">
+        <View id="yesView" class="answerContainer">
+            <Label id="yesLabel" class="answerLabel" />
+        </View>
+        <View id="noView" class="answerContainer">
+            <Label id="noLabel" class="answerLabel" />
+        </View>
+        <View id="verticalSeparator" />
+    </View>
+</Alloy>

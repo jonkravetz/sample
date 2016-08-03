@@ -1,0 +1,27 @@
+<Alloy>
+    <ScrollView id="metricsView">
+
+        <View id="metricsHeader">
+            <Label id="metricsHeaderLabel" />
+        </View>
+        <View id="metricsQuarterChooser" class="chooserView">
+            <Button id="metricsQuarterChooserLeftButton" class="chooserButtonLeft" />
+            <Label id="metricsQuarterChooserDisplay" class="chooserDisplay" />
+            <Button id="metricsQuarterChooserRightButton" class="chooserButtonRight" />
+        </View>
+        <View id="metricsDetailViewTop">
+        </View>
+        <View id="patientsMonthChooser" class="chooserView">
+            <Button id="metricsMonthChooserLeftButton" class="chooserButtonLeft" />
+            <Label id="metricsMonthChooserDisplay" class="chooserDisplay" />
+            <Button id="metricsMonthChooserRightButton" class="chooserButtonRight" />
+        </View>
+
+        <View class="spacer" />
+
+        <View id="monthViewContainer" />
+
+        <View class="spacer" />
+
+    </ScrollView>
+</Alloy>

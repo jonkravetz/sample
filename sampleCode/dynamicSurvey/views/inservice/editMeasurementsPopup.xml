@@ -1,0 +1,17 @@
+<Alloy>
+    <View id="popup">
+
+        <ListView id="form" defaultItemTemplate="itemTemplate">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="name" id="header" />
+                        <TextField bindId="value" onChange="handleTextFieldChanges" class="value" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+
+    </View>
+</Alloy>

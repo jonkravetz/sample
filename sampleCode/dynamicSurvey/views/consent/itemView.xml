@@ -1,0 +1,12 @@
+<Alloy>
+    <View id="itemView">
+        <View id="contentView">
+            <View id="textContainerView">
+                <Label id="titleLabel" />
+                <Label id="bodyLabel" />
+            </View>
+            <View id="contentItems" />
+        </View>
+        <Button id="checkboxButton" />
+    </View>
+</Alloy>

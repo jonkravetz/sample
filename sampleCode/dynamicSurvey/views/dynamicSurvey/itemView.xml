@@ -1,0 +1,10 @@
+<Alloy>
+    <ScrollView id="itemView">
+        <View id="questionView">
+            <Label id="questionLabel" />
+            <View id="answerView" />
+        </View>
+        <View id="answerDetailView" />
+        <View id="footerView" />
+    </ScrollView>
+</Alloy>

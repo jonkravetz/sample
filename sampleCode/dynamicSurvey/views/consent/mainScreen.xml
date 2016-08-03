@@ -1,0 +1,13 @@
+<Alloy>
+    <ScrollView id="dialog">
+        <View id="headerView" class="container">
+            <Label id="headerTitleLabel" />
+            <Label id="headerDescriptionLabel" />
+        </View>
+        <View id="sectionsView" class="container" />
+        <Label id="formInfoLabel" />
+        <View id="bottomView" class="container">
+            <Button id="bottomNextButton" />
+        </View>
+    </ScrollView>
+</Alloy>

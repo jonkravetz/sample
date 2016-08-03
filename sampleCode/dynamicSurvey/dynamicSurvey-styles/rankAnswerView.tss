@@ -1,0 +1,39 @@
+'#answerView': {
+	top: 0,
+	left: 80,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+'#optionView': {
+	top: 24,
+	height: Ti.UI.SIZE,
+	width: 160
+},
+'#optionButton': {
+	top: 0,
+	width: 55,
+	height: 55,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 22
+	},
+	color: Alloy.Globals.colors.silverChalice,
+	backgroundColor: Alloy.Globals.colors.whiteSmoke,
+	backgroundColorSelected: Alloy.Globals.colors.midnightBlue, 
+	backgroundColorUnselected: Alloy.Globals.colors.whiteSmoke, 
+	borderWidth: 2,
+	borderRadius: 27.5,
+	borderColor: Alloy.Globals.colors.veryLightGrey,
+	action: 'answerView'
+},
+'#optionLabel': {
+	top: 70,
+	height: Ti.UI.SIZE,
+	width: 120,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 17
+	},
+	color: Alloy.Globals.colors.thunder,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}

@@ -1,0 +1,35 @@
+<Alloy>
+    <View id="popup">
+        <View id="topView">
+            <TabbedBar id="tabbedBar" />
+        </View>
+        <View id="textFieldView">
+            <TextField id="textField" />
+        </View>
+        <ListView id="listView" defaultItemTemplate="itemTemplate">
+            <SearchBar id="searchBar" />
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <View id="leftView">
+                            <Label bindId="headerLabel" id="header" />
+                            <View id="siteAgreementView">
+                                <Label bindId="siteAgreement" id="attribute1" />
+                                <View bindId="numSiteAgreementCircle" id="attribute2Circle">
+                                    <Label bindId="numSiteAgreement" id="attribute2" />
+                                </View>
+                            </View>
+                        </View>
+                        <View id="rightView">
+                            <View bindId="selectedImage" id="selectedImage" />
+                            <View bindId="rightArrowBackground" id="rightArrowBackground">
+                                <View id="rightArrow" />
+                            </View>
+                        </View>
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+    </View>
+</Alloy>

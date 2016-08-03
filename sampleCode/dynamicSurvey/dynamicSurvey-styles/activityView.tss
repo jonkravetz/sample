@@ -1,0 +1,49 @@
+'#answerView': {
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 142,
+	width: Ti.UI.FILL,
+	
+},
+'#activityContainer': {
+	top: 18,
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+}
+'#locationHeaderLabel': {
+	text: L('survey_activity_location')
+},
+'#addressHeaderLabel': {
+	text: L('survey_activity_address')
+},
+'#dateHeaderLabel': {
+	text: L('survey_activity_date')
+},
+'#timeHeaderLabel': {
+	text: L('survey_activity_time')
+},
+'.container': {
+	height: 26,
+	layout: 'horizontal'
+},
+'.header': {
+	left: 19,
+	height: 26,
+	width: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 17
+	},
+	color: Alloy.Globals.colors.black
+},
+'.text': {
+	left: 5,
+	height: 26,
+	width: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 17
+	},
+	color: Alloy.Globals.colors.black
+}

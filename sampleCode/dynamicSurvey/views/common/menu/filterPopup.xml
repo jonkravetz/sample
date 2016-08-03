@@ -1,0 +1,38 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="filterListView" defaultItemTemplate="itemTemplate">
+            <HeaderView>
+                <View id="header">
+                    <Button id="btnReset" />
+                </View>
+            </HeaderView>
+            <Templates>
+
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <View bindId="IsSelected" id="selectedImage" />
+                    </View>
+                </ItemTemplate>
+
+                <ItemTemplate id="templateGroupHeading" name="groupHeading">
+                    <View id="groupHeadingRow">
+                        <Label bindId="Name" id="groupHeadingLabel" />
+                    </View>
+                </ItemTemplate>
+
+                <ItemTemplate id="template" name="groupItemTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="groupHeader" />
+                        <View bindId="IsSelected" id="selectedImage" />
+                    </View>
+                </ItemTemplate>
+
+            </Templates>
+            <ListSection/>
+            <FooterView>
+                <View id="footer" />
+            </FooterView>
+        </ListView>
+    </View>
+</Alloy>

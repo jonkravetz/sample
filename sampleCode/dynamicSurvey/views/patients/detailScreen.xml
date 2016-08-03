@@ -1,0 +1,66 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="patientDetailContainer">
+            <View id="detailView">
+                <View id="topView">
+                    <Label id="nameLabel" />
+                    <Button id="addProgramButton" class="primaryActionButton" />
+                </View>
+                <View id="genderView">
+                    <Label id="genderHeader" />
+                    <Label id="genderLabel" />
+                </View>
+                <View id="generalConsentView">
+                    <View id="generalConsentIcon" />
+                    <Label id="generalConsentHeader" />
+                    <Label id="generalConsentDateLabel" />
+                    <Button id="viewConsentButton" />
+                </View>
+            </View>
+            <TabbedBar id="patientTabbedBar" />
+            <View id="patientDetailView">
+                <View id="dataColumn" class="dataColumn">
+                    <View id="dobView" class="detailItem">
+                        <View id="dobIcon" class="detailIcon" />
+                        <Label id="dobLabel" class="detailLabel" />
+                    </View>
+                    <View id="caregiverView">
+                        <Label id="caregiverName" />
+                        <View id="relationView">
+                            <Label id="caregiverRelationHeader" />
+                            <Label id="caregiverRelationName" />
+                        </View>
+                    </View>
+                    <View id="addressView" class="detailItem">
+                        <View id="addressIcon" class="detailIcon" />
+                        <Label id="addressLabel" class="detailLabel" />
+                    </View>
+                    <View id="emailView" class="detailItem">
+                        <View id="emailIcon" class="detailIcon" />
+                        <Label id="emailLabel" class="detailLabel" />
+                    </View>
+                </View>
+                <View id="phoneColumn" class="dataColumn" />
+            </View>
+
+            <View id="touchArea">
+                <View id="actionView">
+                    <Button id="editButton" class="linkActionButton" />
+                </View>
+                <View id="conditionsView">
+                    <Label id="conditionsHeader" />
+                    <Label id="conditionsLabel" />
+                </View>
+            </View>
+            <View id="therapeuticAreaView">
+                <View id="therapeuticAreaViewTopDivider" />
+                <Label id="therapeuticAreaLabel" />
+                <Button id="selectTherapeuticAreaButton" />
+                <View id="selectTherapeuticAreaIcon" />
+                <View id="therapeuticAreaViewBottomDivider" />
+            </View>
+            <View id="border" class="border" />
+        </View>
+        <ScrollView id="bottomView" />
+    </View>
+</Alloy>

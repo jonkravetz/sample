@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="dialog">
+        <View id="thankyouIconView" />
+        <Label id="titleLabel" />
+        <Label id="descriptionLabel" />
+        <View id="azIconView" />
+    </View>
+</Alloy>

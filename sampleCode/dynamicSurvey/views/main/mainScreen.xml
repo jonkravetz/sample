@@ -1,0 +1,52 @@
+<Alloy>
+    <TabGroup id="tabGroup">
+        <Tab id="todayTab">
+            <NavigationWindow id="todayNavigationWindow" class="navigationWindow">
+                <Window id="todayWindow">
+                    <LeftNavButton>
+                        <Button id="todayMapButton" />
+                    </LeftNavButton>
+                    <RightNavButton>
+                        <Button id="todayOptionsButton" class="optionsButton" />
+                    </RightNavButton>
+                    <Require id="todayController" src="today/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+        <Tab id="tasksTab">
+            <NavigationWindow id="tasksNavigationWindow" class="navigationWindow">
+                <Window id="tasksWindow">
+                    <Require id="tasksController" src="tasks/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+        <Tab id="calendarTab">
+            <NavigationWindow id="calendarNavigationWindow" class="navigationWindow">
+                <Window id="calendarWindow">
+                    <Require id="calendarController" src="calendar/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+        <Tab id="patientsTab">
+            <NavigationWindow id="patientsNavigationWindow" class="navigationWindow">
+                <Window id="patientsWindow">
+                    <Require id="patientsController" src="patients/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+        <Tab id="hcahcpTab">
+            <NavigationWindow id="hcahcpNavigationWindow" class="navigationWindow">
+                <Window id="hcahcpWindow">
+                    <Require id="hcahcpController" src="hcahcp/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+        <Tab id="profileTab">
+            <NavigationWindow id="profileNavigationWindow" class="navigationWindow">
+                <Window id="profileWindow">
+                    <Require id="profileController" src="profile/mainScreen" />
+                </Window>
+            </NavigationWindow>
+        </Tab>
+    </TabGroup>
+</Alloy>

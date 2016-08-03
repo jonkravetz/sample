@@ -1,0 +1,18 @@
+<Alloy>
+    <View id="phoneView" class="detailItem">
+        <View id="phoneIcon" class="detailIcon phoneIcon" />
+        <View id="phoneDataContainer" class="phoneDataContainer">
+            <View id="phoneNumberContainer" class="phoneNumberContainer">
+                <View id="phoneTypeView">
+                    <Label id="phoneTypeLabel" class="detailLabel phoneType" />
+                    <Label id="phoneNumberLabel" class="detailLabel phoneNumber" />
+                </View>
+                <View id="voiceMailView">
+                    <View id="voiceMailCheck" />
+                    <Label id="voiceMailLabel" class="detailLabel phoneType" />
+                </View>
+            </View>
+            <Label id="phonePreferenceLabel" class="detailLabel phonePreference" />
+        </View>
+    </View>
+</Alloy>

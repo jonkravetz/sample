@@ -1,0 +1,9 @@
+<Alloy>
+    <View id="datePickerView">
+        <View id="headerView">
+            <Button id="doneButton" />
+            <Button id="cancelButton" />
+        </View>
+        <Picker id="datePicker" />
+    </View>
+</Alloy>

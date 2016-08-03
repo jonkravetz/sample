@@ -1,0 +1,342 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <View id="topView">
+                <Label id="nameLabel" />
+                <Button id="completeButton" class="primaryActionButton" />
+            </View>
+            <View id="typeView">
+                <Label id="typeHeader" />
+                <Label id="typeLabel" />
+            </View>
+            <View id="dateLocationView" class="detailItem">
+                <View id="dateIcon" class="detailIcon" />
+                <Label id="dateLabel" class="detailLabel" />
+                <View id="locationIcon" class="detailIcon" />
+                <Label id="locationLabel" class="detailLabel" />
+                <View id="voiceMailView">
+                    <View id="voiceMailCheck" />
+                    <Label id="voiceMailLabel" class="detailLabel phoneType" />
+                </View>
+            </View>
+            <View id="timeAddressView" class="detailItem">
+                <View id="timeIcon" class="detailIcon" />
+                <Label id="timeLabel" class="detailLabel" />
+                <View id="addressIcon" class="detailIcon" />
+                <Label id="addressLabel" class="detailLabel" />
+                <Label id="locationAgreementLabel" />
+                <View id="locationAgreementIcon" />
+            </View>
+        </View>
+        <View id="touchArea">
+            <View id="statusView">
+                <Label id="statusHeader" />
+                <View id="statusDetail">
+                    <Label id="statusLabel" />
+                </View>
+            </View>
+            <View id="verticalDivider" />
+            <View id="durationView">
+                <Label id="durationHeader" />
+                <View id="durationDetail">
+                    <Label id="durationLabel" />
+                </View>
+            </View>
+            <View id="actionView">
+                <Button id="editButton" class="linkActionButton" />
+            </View>
+        </View>
+        <View id="border" class="border" />
+        <View id="bottomView">
+            <ListView id="patientListView">
+                <Templates>
+                    <ItemTemplate id="headerTemplate" name="headerTemplate">
+                        <View id="headerContainer">
+                            <Label bindId="headerName" id="headerLabel1" />
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="headerTemplateAdvanced" name="headerTemplateAdvanced">
+                        <View id="headerContainer">
+                            <Label bindId="headerName" id="headerLabel1" />
+                            <View bindId="AddButton" id="addButton" />
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="blankTemplate" name="blankTemplate">
+                        <View id="blankContainer">
+                            <Label id="bottomHelpText" />
+                        </View>
+                    </ItemTemplate>
+
+                    <ItemTemplate id="spacerTemplate" name="spacerTemplate" />
+
+                    <ItemTemplate id="patientTemplate" name="patientTemplate">
+                        <View id="patientContainer">
+
+                            <View class="patientRow">
+                                <View id="patientNameView" class="dataRow">
+
+                                    <View id="patientNameContainer">
+                                        <Label bindId="patientName" id="patientNameLabel" class="linkActionButton" />
+                                        <ImageView id="patientNameChevron" />
+                                    </View>
+                                    <View id="spacerView" />
+                                    <Label id="programEnrolledLabel" class="dataLabel" />
+                                    <Label bindId="programEnrolledDate" id="programEnrolledDate" class="dataValue" />
+                                    <View id="generalConsentIcon" class="consentIcon" />
+                                    <Label id="generalConsentLabel" class="dataLabel" />
+                                    <View id="programConsentIcon" class="consentIcon" />
+                                    <Label id="programConsentLabel" class="dataLabel" />
+                                    <Label bindId="deleteIcon" id="deleteIcon" class="linkActionButton" />
+                                </View>
+                                <View class="bottomLine" />
+                            </View>
+
+                            <View class="patientRow patientConditions">
+                                <View id="heightSpacer" />
+                                <View id="patientAtrributesRow" class="dataRow">
+                                    <View id="hcpView">
+                                        <Label id="hcpNameLabel" class="dataLabel" />
+                                        <Label bindId="hcpNameValue" id="hcpNameValue" class="dataValue" />
+                                    </View>
+                                    <Label id="conditionsLabel" class="dataLabel" />
+                                    <Label bindId="conditionsValue" id="conditionsValue" class="dataValue" />
+                                    <Label bindId="editHealthInfoLink" id="editHealthInfoLink" class="linkActionButton" />
+                                </View>
+                                <View id="patientTreatments" class="dataRow">
+                                    <Label id="treatmentLabel" class="dataLabel" />
+                                    <Label bindId="treatmentValue" id="treatmentValue" class="dataValue" />
+                                </View>
+                            </View>
+                            <View class="patientRow" bindId="measurementsRow">
+                                <View class="topLine" />
+
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label1" class="dataLabel" />
+                                        <Label bindId="value1" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label2" class="dataLabel" />
+                                    <Label bindId="value2" id="weightValue" class="dataValue" />
+                                    <Label bindId="editMeasurementsLink" id="editMeasurementsLink" class="linkActionButton" />
+                                </View>
+
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label3" class="dataLabel" />
+                                        <Label bindId="value3" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label4" class="dataLabel" />
+                                    <Label bindId="value4" class="dataValue" />
+                                </View>
+
+
+                            </View>
+                        </View>
+                    </ItemTemplate>
+
+                    <ItemTemplate id="completedPatientTemplate" name="completedPatientTemplate">
+                        <View id="completedPatientContainer">
+
+                            <View class="patientRow">
+                                <View id="patientNameView" class="dataRow">
+
+                                    <View id="patientNameContainer">
+                                        <Label bindId="patientName" id="patientNameLabel" class="linkActionButton" />
+                                        <ImageView id="patientNameChevron" />
+                                    </View>
+                                    <View id="spacerView" />
+                                    <Label id="programEnrolledLabel" class="dataLabel" />
+                                    <Label bindId="programEnrolledDate" id="programEnrolledDate" class="dataValue" />
+                                    <View id="generalConsentIcon" class="consentIcon" />
+                                    <Label id="generalConsentLabel" class="dataLabel" />
+                                    <View id="programConsentIcon" class="consentIcon" />
+                                    <Label id="programConsentLabel" class="dataLabel" />
+                                    <Label bindId="deleteIcon" id="deleteIcon" class="linkActionButton" />
+                                </View>
+                                <View class="bottomLine" />
+                            </View>
+
+                            <View class="patientRow patientConditions">
+                                <View class="heightRow" />
+                                <View class="dataRow" id="conditionsRow">
+                                    <View id="hcpView">
+                                        <Label id="hcpNameLabel" class="dataLabel" />
+                                        <Label bindId="hcpNameValue" id="hcpNameValue" class="dataValue" />
+                                    </View>
+
+                                    <Label id="conditionsLabel" class="dataLabel" />
+                                    <Label bindId="conditionsValue" id="conditionsValue" class="dataValue" />
+
+                                    <Label id="editHealthInfoLink" bindId="editHealthInfoLink" class="linkActionButton" />
+                                </View>
+                                <View class="dataRow">
+                                    <Label id="treatmentLabel" class="dataLabel" />
+                                    <Label bindId="treatmentValue" id="treatmentValue" class="dataValue" />
+                                </View>
+                                <View class="bottomLine" />
+                            </View>
+                            <View class="patientRow" bindId="measurementsRow">
+                                <View class="topLine" />
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label1" class="dataLabel" />
+                                        <Label bindId="value1" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label2" class="dataLabel" />
+                                    <Label bindId="value2" id="weightValue" class="dataValue" />
+                                    <Label bindId="editMeasurementsLink" id="editMeasurementsLink" class="linkActionButton" />
+                                </View>
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label3" class="dataLabel" />
+                                        <Label bindId="value3" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label4" class="dataLabel" />
+                                    <Label bindId="value4" class="dataValue" />
+                                </View>
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="readOnlyPatientTemplate" name="readOnlyPatientTemplate">
+                        <View id="readOnlyPatientContainer">
+                            <View class="patientRow">
+                                <View id="patientNameView" class="dataRow">
+                                    <View id="patientNameContainer">
+                                        <Label bindId="patientName" id="patientNameLabel" class="linkActionButton" />
+                                        <ImageView id="patientNameChevron" />
+                                    </View>
+                                    <View id="spacerView" />
+                                    <Label id="programEnrolledLabel" class="dataLabel" />
+                                    <Label bindId="programEnrolledDate" id="programEnrolledDate" class="dataValue" />
+                                    <View id="generalConsentIcon" class="consentIcon" />
+                                    <Label id="generalConsentLabel" class="dataLabel" />
+                                    <View id="programConsentIcon" class="consentIcon" />
+                                    <Label id="programConsentLabel" class="dataLabel" />
+                                    <Label bindId="deleteIcon" id="deleteIcon" class="linkActionButton" />
+                                </View>
+                                <View class="bottomLine" />
+                            </View>
+                            <View class="patientRow patientConditions">
+                                <View class="heightRow" />
+                                <View class="dataRow" id="conditionsRow">
+                                    <View id="hcpView">
+                                        <Label id="hcpNameLabel" class="dataLabel" />
+                                        <Label bindId="hcpNameValue" id="hcpNameValue" class="dataValue" />
+                                    </View>
+
+                                    <Label id="conditionsLabel" class="dataLabel" />
+                                    <Label bindId="conditionsValue" id="conditionsValue" class="dataValue" />
+
+                                    <Label id="editHealthInfoLink" bindId="editHealthInfoLink" class="linkActionButton" />
+                                </View>
+                                <View class="dataRow">
+                                    <Label id="treatmentLabel" class="dataLabel" />
+                                    <Label bindId="treatmentValue" id="treatmentValue" class="dataValue" />
+                                </View>
+                                <View class="bottomLine" />
+                            </View>
+                            <View class="patientRow" bindId="measurementsRow">
+                                <View class="topLine" />
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label1" class="dataLabel" />
+                                        <Label bindId="value1" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label2" class="dataLabel" />
+                                    <Label bindId="value2" id="weightValue" class="dataValue" />
+                                    <Label bindId="editMeasurementsLink" id="editMeasurementsLink" class="linkActionButton" />
+                                </View>
+                                <View class="measurementsSubRow">
+                                    <View id="measurementOne">
+                                        <Label bindId="label3" class="dataLabel" />
+                                        <Label bindId="value3" class="dataValue" />
+                                    </View>
+                                    <Label bindId="label4" class="dataLabel" />
+                                    <Label bindId="value4" class="dataValue" />
+                                </View>
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="inserviceNameTemplate" name="inserviceNameTemplate">
+                        <View id="inserviceNameContainer">
+                            <Label bindId="contactName" id="patientNameLabel" />
+                            <Label bindId="inserviceAddProfile" id="inserviceAddProfile" />
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="programTemplate" name="programTemplate">
+                        <View id="programContainer">
+                            <View id="leftView">
+                                <Label bindId="programName" id="programNameLabel" />
+                                <View id="subprogramsContainer">
+                                    <Label id="subprogramsHeader" />
+                                    <Label bindId="subprograms" id="subprograms" class="userDataLabel" />
+                                </View>
+                                <View id="topicsContainer">
+                                    <Label id="topicsHeader" />
+                                    <Label bindId="topics" id="topics" class="userDataLabel" />
+                                </View>
+                            </View>
+                            <View id="rightView">
+                                <Label bindId="EditProgramLabel" id="editProgramLabel" />
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="programTemplate" name="readOnlyProgramTemplate">
+                        <View id="programContainer">
+                            <View id="leftView">
+                                <Label bindId="programName" id="programNameLabel" />
+                                <View id="subprogramsContainer">
+                                    <Label id="subprogramsHeader" />
+                                    <Label bindId="subprograms" id="subprograms" class="userDataLabel" />
+                                </View>
+                                <View id="topicsContainer">
+                                    <Label id="topicsHeader" />
+                                    <Label bindId="topics" id="topics" class="userDataLabel" />
+                                </View>
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="surveyTemplate" name="surveyTemplate">
+                        <View id="surveyContainer">
+                            <View bindId="Container1" id="survey1Container" class="surveyItemContainer">
+                                <View id="surveyIcon1" class="surveyItemIcon" />
+                                <View bindId="Circle1" class="circle">
+                                    <Label bindId="NumResults1" class="circleAttribute" />
+                                </View>
+                                <Label bindId="Name1" id="surveyLabel1" class="surveyItemLabel" />
+                            </View>
+                            <View bindId="Container2" id="survey2Container" class="surveyItemContainer">
+                                <View id="surveyIcon2" class="surveyItemIcon" />
+                                <View bindId="Circle2" class="circle">
+                                    <Label bindId="NumResults2" class="circleAttribute" />
+                                </View>
+                                <Label bindId="Name2" id="surveyLabel2" class="surveyItemLabel" />
+                            </View>
+                            <View bindId="Container3" id="survey3Container" class="surveyItemContainer">
+                                <View id="surveyIcon3" class="surveyItemIcon" />
+                                <View bindId="Circle3" class="circle">
+                                    <Label bindId="NumResults3" class="circleAttribute" />
+                                </View>
+                                <Label bindId="Name3" id="surveyLabel3" class="surveyItemLabel" />
+                            </View>
+                            <View bindId="Container4" id="survey4Container" class="surveyItemContainer">
+                                <View id="surveyIcon4" class="surveyItemIcon" />
+                                <View bindId="Circle4" class="circle">
+                                    <Label bindId="NumResults4" class="circleAttribute" />
+                                </View>
+                                <Label bindId="Name4" id="surveyLabel4" class="surveyItemLabel" />
+                            </View>
+                            <View bindId="Container5" id="survey5Container" class="surveyItemContainer">
+                                <View id="surveyIcon5" class="surveyItemIcon" />
+                                <View bindId="Circle5" class="circle">
+                                    <Label bindId="NumResults5" class="circleAttribute" />
+                                </View>
+                                <Label bindId="Name5" id="surveyLabel5" class="surveyItemLabel" />
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+            </ListView>
+        </View>
+    </View>
+</Alloy>

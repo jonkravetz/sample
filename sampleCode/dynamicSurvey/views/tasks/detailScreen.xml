@@ -1,0 +1,104 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <View id="topView">
+                <Label id="nameLabel" />
+                <Button id="addInserviceButton" class="primaryActionButton" />
+                <Button id="completeButton" class="primaryActionButton" />
+            </View>
+
+            <View id="sourceView">
+                <Label id="sourceHeader" />
+                <Label id="sourceLabel" />
+            </View>
+
+            <View id="dueDateView">
+                <Label id="dueDateHeader" />
+                <Label id="dueDateLabel" />
+            </View>
+
+            <View id="programView">
+                <Label id="programHeader" />
+                <Label id="programLabel" />
+            </View>
+
+
+            <View id="contactName" class="detailItem">
+                <Label id="contactNameLabel" class="detailLabel" />
+            </View>
+
+
+            <View id="phoneView" class="detailItem">
+                <View id="phoneLocationIcon" class="detailIcon" />
+                <Label id="phoneLocationLabel" class="detailLabel" />
+                <View id="voiceMailView">
+                    <View id="voiceMailCheck" />
+                    <Label id="voiceMailLabel" class="detailLabel phoneType" />
+                </View>
+            </View>
+
+            <View id="addressView" class="detailItem">
+                <View id="addressIcon" class="detailIcon" />
+                <Label id="addressLabel" class="detailLabel" />
+            </View>
+
+        </View>
+
+        <View id="touchArea">
+            <View id="statusView">
+                <Label id="statusHeader" />
+                <View id="statusDetail">
+                    <View id="statusIcon" />
+                    <Label id="statusLabel" />
+                    <View id="statusSpacer" />
+                </View>
+            </View>
+            <View id="statusDivider" />
+
+            <View id="callStatusView">
+                <Label id="callStatusHeader" />
+                <View id="callStatusContainer" layout="horizontal">
+
+                    <View id="callStatusParent_1" class="callStatusParent">
+                        <Label id="callStatusNumber_1" class="callStatusNumber colorInactive" />
+                        <Label id="callStatusText_1" class="callStatusText callStatusTextInactive" />
+                        <ImageView class="rightChevron" />
+                    </View>
+                    <View class="callStatusSpacer" />
+                    <View id="callStatusParent_2" class="callStatusParent">
+                        <Label id="callStatusNumber_2" class="callStatusNumber colorInactive" />
+                        <Label id="callStatusText_2" class="callStatusText callStatusTextInactive" />
+                        <ImageView class="rightChevron" />
+                    </View>
+                    <View class="callStatusSpacer" />
+                    <View id="callStatusParent_3" class="callStatusParent">
+                        <Label id="callStatusNumber_3" class="callStatusNumber colorInactive" />
+                        <Label id="callStatusText_3" class="callStatusText callStatusTextInactive" />
+                        <ImageView class="rightChevron" />
+                    </View>
+                </View>
+            </View>
+
+
+            <View id="actionView">
+                <Button id="editButton" class="linkActionButton" />
+            </View>
+        </View>
+
+        <View id="border" class="border" />
+        <View id="bottomView">
+            <View id="patientContainer">
+                <View id="patientHeader">
+                    <Label id="patientHeaderLabel" />
+                </View>
+                <View id="patientDataContainer">
+                    <Label id="patientNameLabel" />
+                    <View id="consentSignedIcon" />
+                    <Label id="consentSignedLabel" />
+                    <Label id="editPatientLabel" />
+                    <View id="deletePatientIcon" />
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

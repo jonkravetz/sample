@@ -1,0 +1,27 @@
+<Alloy>
+    <View id="wrapper">
+        <ListView id="patientListView" defaultItemTemplate="itemPatientTemplate">
+            <Templates>
+                <ItemTemplate id="patientTemplate" name="itemPatientTemplate">
+                    <View id="container">
+                        <Label bindId="Name" id="nameLabel" />
+                        <View id="dateOfBirthContainer">
+                            <Label bindId="DateOfBirthHeader" id="dateOfBirthHeader" />
+                            <Label bindId="DateOfBirth" id="dateOfBirth" class="userDataLabel" />
+                        </View>
+                        <View id="zipCodeContainer">
+                            <Label bindId="ZipCodeHeader" id="zipCodeHeader" />
+                            <Label bindId="ZipCode" id="zipCode" class="userDataLabel" />
+                        </View>
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="onlineSearchTemplate" name="onlineSearchTemplate">
+                    <Label id="onlineSearchLabel" />
+                    <View id="onlineSearchChevron" />
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+            <SearchBar id="searchBar" />
+        </ListView>
+    </View>
+</Alloy>

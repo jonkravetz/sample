@@ -1,0 +1,35 @@
+'#answerView': {
+	top: 0,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: 'horizontal'
+},
+'#activityView': {
+	top: 24,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+'#activityButton': {
+	top: 0,
+	left: 0,
+	width: 118,
+	height: 35,
+	borderRadius: 3,
+	color: Alloy.Globals.colors.orange,
+	borderColor: Alloy.Globals.colors.orange,
+	backgroundColor: Alloy.Globals.colors.white,
+	action: 'addInservice'
+},
+'#taskButton': {
+	top: 0,
+	left: 130,
+	width: 118,
+	height: 35,
+	borderRadius: 3,
+	color: Alloy.Globals.colors.orange,
+	borderColor: Alloy.Globals.colors.orange,
+	backgroundColor: Alloy.Globals.colors.white,
+	visible: false,
+	enabled: false,
+	action: 'addTask'
+}

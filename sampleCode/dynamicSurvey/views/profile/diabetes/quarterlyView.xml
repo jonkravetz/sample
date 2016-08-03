@@ -1,0 +1,54 @@
+<Alloy>
+    <View id="inservicesMetricsDisplayView">
+
+
+        <View id="leftView">
+
+            <Label id="metricsQuarterHeader" class="metricsHeader" />
+
+            <View id="displayView">
+
+                <Label id="goalHeader" />
+                <Label id="goalLabel" />
+
+                <View id="month1Control" class="monthControl">
+                    <Label id="month1Header" class="monthHeader" />
+                    <View id="month1Shape" class="monthShape">
+                        <View class="monthNumberView">
+                            <Label id="month1Number" class="monthNumber" />
+                            <Label class="monthNumberPercentSign" />
+                        </View>
+                    </View>
+                </View>
+                <View id="month2Control" class="monthControl">
+                    <Label id="month2Header" class="monthHeader" />
+                    <View id="month2Shape" class="monthShape">
+                        <View class="monthNumberView">
+                            <Label id="month2Number" class="monthNumber" />
+                            <Label class="monthNumberPercentSign" />
+                        </View>
+                    </View>
+                </View>
+                <View id="month3Control" class="monthControl">
+                    <Label id="month3Header" class="monthHeader" />
+                    <View id="month3Shape" class="monthShape">
+                        <View class="monthNumberView">
+                            <Label id="month3Number" class="monthNumber" />
+                            <Label class="monthNumberPercentSign" />
+                        </View>
+                    </View>
+                </View>
+            </View>
+        </View>
+        <View class="verticalLineView" />
+        <View id="rightView">
+            <View id="total1Control" class="totalControl">
+                <View class="totalNumberView">
+                    <Label id="total1Number" class="totalNumberLight" />
+                    <Label class="totalNumberPercentSign" />
+                </View>
+                <Label id="total1Header" class="totalHeader" />
+            </View>
+        </View>
+    </View>
+</Alloy>

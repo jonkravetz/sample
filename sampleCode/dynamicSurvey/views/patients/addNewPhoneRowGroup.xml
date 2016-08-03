@@ -1,0 +1,29 @@
+<Alloy>
+    <View id="container">
+        <View id="telephone" class="row">
+            <View id="primaryTelehpone" />
+            <Label id="telephoneHeader" class="header telephoneText" />
+            <TextField id="telephoneLabel" class="phone" />
+        </View>
+        <View id="divider" class="divider" />
+        <View id="telephoneType" class="row">
+            <Label id="telephoneTypeHeader" class="header telephoneTypeText touchDisabled" />
+            <Label id="telephoneTypeLabel" class="hintText touchDisabled" />
+            <Label id="telephoneTypeText" class="labelText touchDisabled" />
+            <View id="selectImage" class="selectImage touchDisabled" />
+        </View>
+        <View id="divider" class="divider" />
+        <View id="telephoneContactTime" class="row">
+            <Label id="telephoneContactTimeHeader" class="header telephoneContactTimeText touchDisabled" />
+            <Label id="telephoneContactTimeLabel" class="hintText touchDisabled" />
+            <Label id="telephoneContactTimeText" class="labelText touchDisabled" />
+            <View id="selectImage" class="selectImage touchDisabled" />
+        </View>
+        <View id="divider" class="divider" />
+        <View id="telephoneVoiceMailPermission" class="row voiceMailRow">
+            <Label id="telephoneVoiceMailPermissionLabel" class="header touchDisabled" />
+            <Switch id="telephoneVoiceMailPermissionSwitch" />
+        </View>
+        <View id="divider" class="divider" />
+    </View>
+</Alloy>

@@ -1,0 +1,16 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="form" defaultItemTemplate="itemTemplate">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <Label bindId="SiteAgreement" id="attribute1" />
+                        <View bindId="IsSelected" id="selectedImage" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+    </View>
+</Alloy>

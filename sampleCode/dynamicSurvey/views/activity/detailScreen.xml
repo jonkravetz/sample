@@ -1,0 +1,39 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <View id="topView">
+                <Label id="nameLabel" />
+            </View>
+            <View id="typeView">
+                <Label id="typeHeader" />
+                <Label id="typeLabel" />
+            </View>
+            <View id="dateLocationView" class="detailItem">
+                <View id="dateIcon" class="detailIcon" />
+                <Label id="dateLabel" class="detailLabel" />
+                <View id="locationIcon" class="detailIcon" />
+                <Label id="locationLabel" class="detailLabel" />
+            </View>
+            <View id="timeAddressView" class="detailItem">
+                <View id="timeIcon" class="detailIcon" />
+                <Label id="timeLabel" class="detailLabel" />
+                <View id="addressIcon" class="detailIcon" />
+                <Label id="addressLabel" class="detailLabel" />
+            </View>
+        </View>
+        <View id="touchArea">
+            <View id="statusView">
+                <Label id="statusHeader" />
+                <View id="statusDetail">
+                    <Label id="statusLabel" />
+                </View>
+            </View>
+            <View id="verticalDivider" />
+            <View id="actionView">
+                <Button id="editButton" class="linkActionButton" />
+            </View>
+        </View>
+        <View id="border" class="border" />
+        <View id="bottomView" />
+    </View>
+</Alloy>

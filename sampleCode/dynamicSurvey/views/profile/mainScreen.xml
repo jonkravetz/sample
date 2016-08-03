@@ -1,0 +1,18 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <Label id="nameLabel" />
+            <Label id="therapeuticAreaLabel" />
+            <View id="territoryView">
+                <Label id="territoryHeader" class="profileHeaderLabel" />
+                <Label id="territoryLabel" class="profileLabel" />
+            </View>
+            <View id="lastUpdatedDateView">
+                <Label id="lastUpdatedDateHeader" class="profileHeaderLabel" />
+                <Label id="lastUpdatedDateLabel" class="profileLabel" />
+            </View>
+        </View>
+        <View id="border" class="border" />
+        <View id="bottomView" />
+    </View>
+</Alloy>

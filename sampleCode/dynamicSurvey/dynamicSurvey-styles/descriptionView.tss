@@ -1,0 +1,32 @@
+'#answerView': {
+	top: 0,
+	left: 0,
+	right: 0,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
+},
+'#descriptionContainer': {
+	top: 20,
+	bottom: 20,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: 'horizontal'
+},
+'#descriptionShape': {
+	top: 0,
+	left: 12,
+	height: 20,
+	width: 20,
+	borderRadius: 10,
+	backgroundColor: Alloy.Globals.colors.turquoiseBlue
+},
+'#descriptionLabel': {
+	left: 10,
+	right: 24,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 18
+	},
+	color: Alloy.Globals.colors.thunder	
+}

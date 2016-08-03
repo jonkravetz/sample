@@ -1,0 +1,59 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="topBarView">
+            <View id="backDateView" class="dateButtonView">
+                <View id="backDateImage" class="dateButtonImage" />
+            </View>
+            <Button id="todayButton" />
+            <View id="nextDateView" class="dateButtonView">
+                <View id="nextDateImage" class="dateButtonImage" />
+            </View>
+
+            <View id="dateView">
+                <Label id="dayNameLabel" />
+                <Label id="completeDateLabel" />
+                <View id="dropdownImage" />
+            </View>
+
+            <TabbedBar id="calendarViewSelector" />
+        </View>
+        <View id="calendarView">
+            <WebView id="calendarWebView" />
+            <View id="calendarHeaderView">
+
+                <View id="dayViewHeader">
+                    <Label id="calendarHeaderLabel" />
+                    <Button id="addEventImage" />
+                </View>
+                <View id="weekViewHeader">
+                    <View id="calHeaderLeftPadding" class="calHeaderLeftPadding">
+                    </View>
+                    <View id="calHeader_0" class="calHeaderDowSun">
+                    </View>
+                    <View id="calHeader_1" class="calHeaderDow">
+                    </View>
+                    <View id="calHeader_2" class="calHeaderDow">
+                    </View>
+                    <View id="calHeader_3" class="calHeaderDow">
+                    </View>
+                    <View id="calHeader_4" class="calHeaderDow">
+                    </View>
+                    <View id="calHeader_5" class="calHeaderDow">
+                    </View>
+                    <View id="calHeader_6" class="calHeaderDowSat">
+                    </View>
+                </View>
+                <View id="monthViewHeader">
+                    <!-- TODO: move this text properties into TSS -->
+                    <Label class="monthHeaderLabel lightDOW" text="L('calendar_dow_sun')" />
+                    <Label class="monthHeaderLabel" text="L('calendar_dow_mon')" />
+                    <Label class="monthHeaderLabel" text="L('calendar_dow_tue')" />
+                    <Label class="monthHeaderLabel" text="L('calendar_dow_wed')" />
+                    <Label class="monthHeaderLabel" text="L('calendar_dow_thu')" />
+                    <Label class="monthHeaderLabel" text="L('calendar_dow_fri')" />
+                    <Label class="monthHeaderLabel lightDOW" text="L('calendar_dow_sat')" />
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

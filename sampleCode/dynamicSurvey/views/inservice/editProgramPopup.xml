@@ -1,0 +1,24 @@
+<Alloy>
+    <View id="popup">
+        <View id="editFormView">
+            <View id="programView" class="row">
+                <Label id="programHeaderLabel" class="header" />
+                <TextField id="programTextField" class="value" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="subprograms" class="drow">
+                <Label id="subprogramsHeaderLabel" class="header" />
+                <Label id="subprogramsHintLabel" class="hintText" />
+                <Label id="subprogramsTextLabel" class="labelText" />
+                <View class="rightArrow" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="topics" class="drow">
+                <Label id="topicsHeaderLabel" class="header" />
+                <Label id="topicsHintLabel" class="hintText" />
+                <Label id="topicsTextLabel" class="labelText" />
+                <View class="rightArrow" />
+            </View>
+        </View>
+    </View>
+</Alloy>

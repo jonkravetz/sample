@@ -1,0 +1,29 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="listView">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <View id="leftView">
+                            <Label bindId="Name" id="nameLabel" />
+                            <View id="dateOfBirthContainer">
+                                <Label bindId="DateOfBirthHeader" id="dateOfBirthHeader" />
+                                <Label bindId="DateOfBirth" id="dateOfBirth" class="userDataLabel" />
+                            </View>
+                            <View id="zipCodeContainer">
+                                <Label bindId="ZipCodeHeader" id="zipCodeHeader" />
+                                <Label bindId="ZipCode" id="zipCode" class="userDataLabel" />
+                            </View>
+                        </View>
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="blankTemplate" name="blankTemplate">
+                    <View id="row">
+                        <Label id="blankTemplateTextLabel" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+        </ListView>
+    </View>
+</Alloy>

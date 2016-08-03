@@ -1,0 +1,73 @@
+<Alloy>
+    <ScrollView id="popup">
+        <View id="form">
+            <View id="addressGroup" class="row">
+                <View id="divider" class="divider" />
+                <View id="address1" class="row">
+                    <Label id="address1Header" class="header" />
+                    <TextField id="address1Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="address2" class="row">
+                    <Label id="address2Header" class="header" />
+                    <TextField id="address2Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="city" class="row">
+                    <Label id="cityHeader" class="header" />
+                    <TextField id="cityLabel" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="stateZip" class="row">
+                    <View id="state" class="half">
+                        <View class="rightArrow" />
+                        <Label id="stateHeader" class="header" />
+                        <Label id="stateLabel" class="hintText" />
+                        <Label id="stateText" class="labelText" />
+                    </View>
+                    <View id="verticalDivider" class="verticalDivider" />
+                    <View id="zipcode" class="half">
+                        <Label id="zipcodeHeader" class="header" />
+                        <TextField id="zipcodeLabel" class="number" />
+                    </View>
+                </View>
+                <View id="divider" class="divider" />
+                <View id="addSecondaryAddress" class="row">
+                    <View id="addAddressIcon" />
+                    <Label id="addAddressHeader" class="header" />
+                </View>
+            </View>
+            <View id="secondaryAddressGroup" class="row">
+                <View id="divider" class="divider" />
+                <View id="secondaryAddress1" class="row">
+                    <Label id="secondaryAddress1Header" class="header" />
+                    <TextField id="secondaryAddress1Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="secondaryAddress2" class="row">
+                    <Label id="secondaryAddress2Header" class="header" />
+                    <TextField id="secondaryAddress2Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="secondaryAddressCity" class="row">
+                    <Label id="secondaryAddressCityHeader" class="header" />
+                    <TextField id="secondaryAddressCityLabel" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="secondaryAddressStateZip" class="row">
+                    <View id="secondaryAddressState" class="half">
+                        <View class="rightArrow" />
+                        <Label id="secondaryAddressStateHeader" class="header" />
+                        <Label id="secondaryAddressStateLabel" class="hintText" />
+                        <Label id="secondaryAddressStateText" class="labelText" />
+                    </View>
+                    <View id="verticalDivider" class="verticalDivider" />
+                    <View id="secondaryAddressZipcode" class="half">
+                        <Label id="secondaryAddressZipcodeHeader" class="header" />
+                        <TextField id="secondaryAddressZipcodeLabel" class="number" />
+                    </View>
+                </View>
+            </View>
+        </View>
+    </ScrollView>
+</Alloy>

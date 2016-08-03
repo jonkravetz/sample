@@ -1,0 +1,169 @@
+'#popup': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.colors.white
+},
+'#form': {
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Ti.UI.SIZE,
+	borderColor: Alloy.Globals.colors.veryLighterGrey,
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.colors.white,
+	layout: 'vertical'
+},
+'#addAddressIcon': {
+	left: 9,
+	width: 24,
+	height: 24,
+	backgroundImage: '/images/common/img_addfields.png'
+},
+'#addAddressHeader': {
+	left: 45,
+	text: L('add_secondary_address')
+},
+'#address1Header': {
+	text: L('add_task_address1')
+},
+'#address2Header': {
+	text: L('add_task_address2')
+},
+'#cityHeader': {
+	text: L('add_task_city')
+},
+'#state': {
+	left: 0
+},
+'#stateHeader': {
+	text: L('add_task_state')
+},
+'#zipcode': {
+	right: 0
+},
+'#zipcodeHeader': {
+	text: L('add_task_zipcode')
+},
+'#secondaryAddress1Header': {
+	text: L('add_task_address1')
+},
+'#secondaryAddress2Header': {
+	text: L('add_task_address2')
+},
+'#secondaryAddressCityHeader': {
+	text: L('add_task_city')
+},
+'#secondaryAddressState': {
+	left: 0
+},
+'#secondaryAddressStateHeader': {
+	text: L('add_task_state')
+},
+'#secondaryAddressZipcode': {
+	right: 0
+},
+'#secondaryAddressZipcodeHeader': {
+	text: L('add_task_zipcode')
+},
+'#saveButton': {
+	title: L('common_save')
+},
+'#addressGroup': {
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+'#secondaryAddressGroup': {
+	height: 0,
+	heightActive: Ti.UI.SIZE,
+	heightInactive: 0,
+	visible: false,
+	layout: 'vertical'
+},
+'.value': {
+	right: 10,
+	width: Ti.UI.FILL,
+	height: 44,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.grey,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	hintTextColor: Alloy.Globals.colors.silver,
+	hintText: L('common_enter')
+},
+'.row': {
+	width: Ti.UI.FILL,
+	height: 44
+},
+'.header': {
+	left: 10,
+	height: Ti.UI.FILL,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.matterhorn
+},
+'.number': {
+	right: 10,
+	width: Ti.UI.FILL,
+	height: 44,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.grey,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	hintTextColor: Alloy.Globals.colors.silver,
+	keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	hintText: L('common_enter')
+},
+'.half': {
+	width: '50%',
+	height: 44
+},
+'.divider': {
+	width: Ti.UI.FILL,
+	height: 1,	
+	backgroundColor: Alloy.Globals.colors.veryLighterGrey
+},
+'.verticalDivider': {
+	width: 1,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.colors.veryLighterGrey
+},
+'.hintText': {
+	right: 26,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	text: L('common_select'),
+	color: Alloy.Globals.colors.silver,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	touchEnabled: false
+},
+'.labelText': {
+	right: 26,
+	left: 80,
+	height: 24,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.grey,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	touchEnabled: false
+},
+'.rightArrow': {
+	right: 10,
+	width: 9,
+	height: 13,
+	backgroundImage: '/images/common/ic_field_chevrone.png',
+	touchEnabled: false
+}

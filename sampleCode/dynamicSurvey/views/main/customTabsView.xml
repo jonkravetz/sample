@@ -1,0 +1,28 @@
+<Alloy>
+    <View id="frontTabs">
+        <View id="todayTabFront" class="tabView">
+            <View id="todayTabIcon" class="tabIcon" />
+            <Label id="todayTabLabel" class="tabLabel" />
+        </View>
+        <View id="tasksTabFront" class="tabView">
+            <View id="tasksTabIcon" class="tabIcon" />
+            <Label id="tasksTabLabel" class="tabLabel" />
+        </View>
+        <View id="calendarTabFront" class="tabView">
+            <View id="calendarTabIcon" class="tabIcon" />
+            <Label id="calendarTabLabel" class="tabLabel" />
+        </View>
+        <View id="patientsTabFront" class="tabView">
+            <View id="patientsTabIcon" class="tabIcon" />
+            <Label id="patientsTabLabel" class="tabLabel" />
+        </View>
+        <View id="hcahcpTabFront" class="tabView">
+            <View id="hcahcpTabIcon" class="tabIcon" />
+            <Label id="hcahcpTabLabel" class="tabLabel" />
+        </View>
+        <View id="profileTabFront" class="tabView">
+            <View id="profileTabIcon" class="tabIcon" />
+            <Label id="profileTabLabel" class="tabLabel" />
+        </View>
+    </View>
+</Alloy>

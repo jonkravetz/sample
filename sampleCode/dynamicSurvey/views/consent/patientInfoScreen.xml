@@ -1,0 +1,33 @@
+<Alloy>
+    <ScrollView id="dialog">
+        <View id="headerView" class="container">
+            <TextField id="firstNameField" class="inputField">
+                <Label class="requiredLabel" />
+            </TextField>
+            <TextField id="lastNameField" class="inputField">
+                <Label class="requiredLabel" />
+            </TextField>
+            <View id="genderView" class="inputField">
+                <View id="maleGenderView" class="genderSelector">
+                    <Label id="maleGenderLabel" class="inputLabel" />
+                </View>
+                <View id="femaleGenderView" class="genderSelector">
+                    <Label id="femaleGenderLabel" class="inputLabel" />
+                </View>
+                <View id="preferNotToAnswerView" class="genderSelector">
+                    <Label id="preferNotToAnswerLabel" class="inputLabel" />
+                </View>
+                <Label class="requiredLabel requiredLabelGender" />
+            </View>
+            <View id="dobView" class="inputField">
+                <Label id="dobLabel" class="selectorLabel" />
+                <View class="dropdownView" />
+                <Label class="requiredLabel" />
+            </View>
+        </View>
+        <View id="bottomView" class="container">
+            <Button id="bottomBackButton" />
+            <Button id="bottomNextButton" />
+        </View>
+    </ScrollView>
+</Alloy>

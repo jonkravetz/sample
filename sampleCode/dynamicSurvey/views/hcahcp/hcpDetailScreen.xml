@@ -1,0 +1,68 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <Label id="nameLabel" />
+            <View id="designationView">
+                <Label id="designationHeader" />
+                <Label id="designationLabel" />
+            </View>
+            <View id="phoneView" class="detailItem">
+                <View id="phoneIcon" class="detailIcon" />
+                <Label id="phoneLabel" class="detailLabel" />
+            </View>
+            <View id="emailView" class="detailItem">
+                <View id="emailIcon" class="detailIcon" />
+                <Label id="emailLabel" class="detailLabel" />
+            </View>
+            <View id="addressListContainer">
+                <ListView id="addressListView" defaultItemTemplate="addressTemplate">
+                    <Templates>
+                        <ItemTemplate id="template" name="addressTemplate">
+                            <View id="container" class="detailItem">
+                                <View id="addressIcon" class="detailIcon" />
+                                <Label bindId="address" id="addressLabel" class="detailLabel" />
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection/>
+                </ListView>
+            </View>
+        </View>
+        <View id="touchArea">
+            <View id="expandView">
+                <Label id="expandLabel" />
+                <View id="expandIcon" />
+            </View>
+        </View>
+        <View id="border" class="border" />
+        <View id="accountView">
+            <ListView id="accountListView">
+                <Templates>
+                    <ItemTemplate id="accountTemplate" name="accountTemplate">
+                        <View id="container">
+                            <Label bindId="name" id="accountNameLabel" />
+                            <View id="accountPhoneContainer">
+                                <View id="accountPhoneIcon" />
+                                <Label bindId="phone" id="accountPhoneLabel" />
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="headerTemplate" name="headerTemplate">
+                        <View id="headerContainer">
+                            <Label bindId="name" id="headerLabel1" />
+                        </View>
+                    </ItemTemplate>
+                    <ItemTemplate id="patientTemplate" name="patientTemplate">
+                        <View id="container">
+                            <Label bindId="name" id="patientNameLabel" />
+                            <Label id="patientDOBHeader" />
+                            <Label bindId="dateOfBirth" id="patientDOBLabel" />
+                            <Label id="patientZipcodeHeader" />
+                            <Label bindId="zipcode" id="patientZipcodeLabel" />
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+            </ListView>
+        </View>
+    </View>
+</Alloy>

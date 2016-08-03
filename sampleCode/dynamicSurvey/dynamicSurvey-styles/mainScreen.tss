@@ -1,0 +1,72 @@
+'#dialog': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: '100%',
+	contentHeight: 'auto'
+},
+'#leftNavCancelButton': {
+	title: L('common_cancel')
+},
+'#headerView': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: 145,
+	backgroundColor: Alloy.Globals.colors.white
+},
+'#titleLabel': {
+	top: 55,
+	left: 29,
+	right: 29,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.bold,
+		fontSize: 26
+	},
+	color: Alloy.Globals.colors.matterhorn
+},
+'#patientInfoView': {
+	top: 90,
+	left: 29,
+	right: 29,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+'#patientLabel': {
+	left: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 14
+	},
+	color: Alloy.Globals.colors.matterhorn,
+	text: L('survey_patient_title')
+},
+'#patientNameLabel': {
+	left: 5,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 14
+	},
+	color: Alloy.Globals.colors.suvaGrey
+},
+'#horizontalSeparator': {
+	top: 145,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.Globals.colors.veryLightGrey
+},
+'#surveyContentView': {
+	top: 145,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.colors.gainsboro,
+	scrollingEnabled: false
+}

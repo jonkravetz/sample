@@ -1,0 +1,28 @@
+<Alloy>
+    <View id="inserviceDetailView">
+        <View id="inserviceDetailIcon" />
+        <Label id="inserviceNumber" />
+        <Label id="inserviceDate" />
+
+        <View id="inserviceProgramIcon" />
+        <Label id="inserviceProgram" class="inserviceTitle" />
+        <Label id="inserviceLocation" class="inserviceLocation" />
+
+        <Label id="inserviceSubprogramHeader" class="programViewHeader" />
+        <Label id="inserviceSubprogramText" class="inserviceTextLabel" />
+
+        <Label id="inserviceTopicsHeader" class="programViewHeader" />
+        <Label id="inserviceTopicsText" class="inserviceTextLabel" />
+
+        <View id='measurementsRow'>
+            <View id="acView">
+                <Label id="acLabel" class="programViewHeader" />
+                <Label id="acValue" class="inserviceTextLabel" />
+            </View>
+            <View id="weightView">
+                <Label id="weightLabel" class="programViewHeader" />
+                <Label id="weightValue" class="inserviceTextLabel" />
+            </View>
+        </View>
+    </View>
+</Alloy>

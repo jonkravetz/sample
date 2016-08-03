@@ -1,0 +1,39 @@
+<Alloy>
+    <View id="programContainer">
+        <View id="programHeaderContainer">
+            <View id="programInfoView">
+                <Label id="programNameLabel" />
+                <Label id="programStatusHeaderLabel" />
+                <Label id="programStatusDateLabel" />
+            </View>
+            <Button id="updateProgramButton" />
+        </View>
+        <View id="consentSignedContainer">
+            <View id="consentIcon" />
+            <Label id="consentLabel" />
+        </View>
+        <View id="healthContainer">
+            <Label id="healthHeaderLabel" />
+            <View id="healthInfoContent" class="sectionDetailView">
+                <View id="hcpView">
+                    <Label id="hcpHeader" class="programViewHeader" />
+                    <Label id="hcpText" class="inserviceTextLabel" />
+                </View>
+                <View id="treatmentView">
+                    <Label id="treatmentHeader" class="programViewHeader" />
+                    <Label id="treatmentText" class="inserviceTextLabel" />
+                </View>
+                <Button id="editHealthButton" />
+            </View>
+        </View>
+        <View id="inservicesContainer">
+            <Label id="inservicesHeaderLabel" />
+            <View id="tabbedBarConatiner">
+                <TabbedBar id="inservicesTabbedBar" />
+                <Button id="inserviceButton" class="primaryActionButton" />
+            </View>
+            <View id="inservicesGroupContainer" />
+        </View>
+        <View id="bottomSpace" />
+    </View>
+</Alloy>

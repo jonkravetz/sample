@@ -1,0 +1,78 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <View id="topView">
+                <Label id="nameLabel" />
+                <Button id="completeButton" class="primaryActionButton" />
+            </View>
+            <View id="typeView">
+                <Label id="typeHeader" />
+                <Label id="typeLabel" />
+            </View>
+            <View id="dateLocationView" class="detailItem">
+                <View id="dateIcon" class="detailIcon" />
+                <Label id="dateLabel" class="detailLabel" />
+                <View id="locationIcon" class="detailIcon" />
+                <Label id="locationLabel" class="detailLabel" />
+            </View>
+            <View id="timeAddressView" class="detailItem">
+                <View id="timeIcon" class="detailIcon" />
+                <Label id="timeLabel" class="detailLabel" />
+                <View id="addressIcon" class="detailIcon" />
+                <Label id="addressLabel" class="detailLabel" />
+                <Label id="locationAgreementLabel" />
+                <View id="locationAgreementIcon" />
+            </View>
+        </View>
+        <View id="touchArea">
+            <View id="statusView">
+                <Label id="statusHeader" />
+                <View id="statusDetail">
+                    <Label id="statusLabel" />
+                </View>
+            </View>
+            <View id="verticalDivider" />
+            <View id="durationView">
+                <Label id="durationHeader" />
+                <View id="durationDetail">
+                    <Label id="durationLabel" />
+                </View>
+            </View>
+            <View id="actionView">
+                <Button id="editButton" class="linkActionButton" />
+            </View>
+        </View>
+        <View id="border" class="border" />
+        <View id="bottomView">
+            <View id="inservicesView">
+                <ListView id="inserviceListView" defaultTemplate="inserviceTemplate">
+                    <Templates>
+                        <ItemTemplate id="inserviceTemplate" name="inserviceTemplate">
+                            <View id="inserviceContainer">
+                                <View id="consentIcon" />
+                                <View id="leftView">
+                                    <Label bindId="inserviceNameLabel" id="inserviceNameLabel" />
+                                    <Label bindId="inserviceLocationLabel" id="inserviceLocationLabel" />
+                                    <View id="subprogramsContainer">
+                                        <Label id="subprogramsHeader" />
+                                        <Label bindId="subprograms" id="subprograms" class="userDataLabel" />
+                                    </View>
+                                    <View id="topicsContainer">
+                                        <Label id="topicsHeader" />
+                                        <Label bindId="topics" id="topics" class="userDataLabel" />
+                                    </View>
+                                </View>
+                                <View id="rightView">
+                                    <Label bindId="numPatientsLabel" id="numPatientsLabel" />
+                                    <View id="patientsIcon" />
+                                    <Label bindId="inserviceDateLabel" id="inserviceDateLabel" />
+                                </View>
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+                </ListView>
+                <Label id="bottomHelpText" />
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,69 @@
+<Alloy>
+    <View id="metricsView">
+        <View id="metricsHeader">
+            <Label id="metricsHeaderLabel" />
+        </View>
+        <View id="metricsDetailViewTop">
+            <Label id="inservicesQuarterHeader" class="metricsHeader" />
+            <View id="inservicesQuarterChooser" class="chooserView">
+                <Button id="inservicesQuarterChooserLeftButton" class="chooserButtonLeft" />
+                <Label id="inservicesQuarterChooserDisplay" class="chooserDisplay" />
+                <Button id="inservicesQuarterChooserRightButton" class="chooserButtonRight" />
+            </View>
+            <View id="inservicesMetricsDisplayView">
+                <Label id="goalHeader" />
+                <Label id="goalLabel" />
+                <View id="month1Control" class="monthControl">
+                    <Label id="month1Header" class="monthHeader" />
+                    <View id="month1Shape" class="monthShape">
+                        <Label id="month1Number" class="monthNumber" />
+                    </View>
+                </View>
+                <View id="month2Control" class="monthControl">
+                    <Label id="month2Header" class="monthHeader" />
+                    <View id="month2Shape" class="monthShape">
+                        <Label id="month2Number" class="monthNumber" />
+                    </View>
+                </View>
+                <View id="month3Control" class="monthControl">
+                    <Label id="month3Header" class="monthHeader" />
+                    <View id="month3Shape" class="monthShape">
+                        <Label id="month3Number" class="monthNumber" />
+                    </View>
+                </View>
+                <View id="total1Control" class="totalControl">
+                    <Label id="total1Number" class="totalNumberLight" />
+                    <Label id="total1Header" class="totalHeader" />
+                </View>
+            </View>
+        </View>
+        <View id="metricsDetailViewBottom">
+            <View id="metricsDetailViewBottomA">
+                <Label id="patientsMonthHeader" class="metricsHeader" />
+                <View id="patientsMonthChooser" class="chooserView">
+                    <Button id="patientsMonthChooserLeftButton" class="chooserButtonLeft" />
+                    <Label id="patientsMonthChooserDisplay" class="chooserDisplay" />
+                    <Button id="patientsMonthChooserRightButton" class="chooserButtonRight" />
+                </View>
+                <View id="patientMonthIcon" class="patientIcon" />
+                <View id="total2Control" class="totalControl">
+                    <Label id="total2Number" class="totalNumberDark" />
+                    <Label id="total2Header" class="totalHeader" />
+                </View>
+            </View>
+            <View id="metricsDetailViewBottomB">
+                <Label id="patientsQuarterHeader" class="metricsHeader" />
+                <View id="patientsQuarterChooser" class="chooserView">
+                    <Button id="patientsQuarterChooserLeftButton" class="chooserButtonLeft" />
+                    <Label id="patientsQuarterChooserDisplay" class="chooserDisplay" />
+                    <Button id="patientsQuarterChooserRightButton" class="chooserButtonRight" />
+                </View>
+                <View id="patientQuarterIcon" class="patientIcon" />
+                <View id="total3Control" class="totalControl">
+                    <Label id="total3Number" class="totalNumberDark" />
+                    <Label id="total3Header" class="totalHeader" />
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

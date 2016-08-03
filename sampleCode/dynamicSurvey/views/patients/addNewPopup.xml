@@ -1,0 +1,152 @@
+<Alloy>
+    <ScrollView id="popup">
+        <View id="form">
+            <View id="patientName" class="row">
+                <View id="firstName" class="half left">
+                    <Label id="firstNameHeader" class="header firstNameText" />
+                    <TextField id="firstNameLabel" class="value" />
+                </View>
+                <View id="verticalDivider" class="verticalDivider" />
+                <View id="lastName" class="half right">
+                    <Label id="lastNameHeader" class="header lastNameText" />
+                    <TextField id="lastNameLabel" class="value" />
+                </View>
+            </View>
+            <View id="divider" class="divider" />
+            <View id="patientName" class="row">
+                <View id="dob" class="half left">
+                    <Label id="dobHeader" class="header" />
+                    <Label id="dobLabel" class="hintText" />
+                    <Label id="dobText" class="labelText" />
+                    <View id="selectImage" class="selectImage" />
+                </View>
+                <View id="verticalDivider" class="verticalDivider" />
+                <View id="gender" class="half right">
+                    <Label id="genderHeader" class="header" />
+                    <Label id="genderLabel" class="hintText" />
+                    <Label id="genderText" class="labelText" />
+                    <View id="selectImage" class="selectImage" />
+                </View>
+            </View>
+            <View id="divider" class="divider" />
+            <View id="address1" class="row">
+                <Label id="address1Header" class="header" />
+                <TextField id="address1Label" class="value" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="address2" class="row">
+                <Label id="address2Header" class="header" />
+                <TextField id="address2Label" class="value" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="cityState" class="row">
+                <View id="city" class="half left">
+                    <Label id="cityHeader" class="header cityText" />
+                    <TextField id="cityLabel" class="value" />
+                </View>
+                <View id="verticalDivider" class="verticalDivider" />
+                <View id="state" class="half right">
+                    <Label id="stateHeader" class="header stateText touchDisabled" />
+                    <Label id="stateLabel" class="hintText touchDisabled" />
+                    <Label id="stateText" class="labelText touchDisabled" />
+                    <View id="selectImage" class="selectImage touchDisabled" />
+                </View>
+            </View>
+            <View id="divider" class="divider" />
+            <View id="zipEmail" class="row">
+                <View id="zipcode" class="half left">
+                    <Label id="zipcodeHeader" class="header zipcodeText" />
+                    <TextField id="zipcodeLabel" class="number" />
+                </View>
+                <View id="verticalDivider" class="verticalDivider" />
+                <View id="email" class="half right">
+                    <Label id="emailHeader" class="header emailText" />
+                    <TextField id="emailLabel" class="value" />
+                </View>
+            </View>
+            <View id="divider" class="divider" />
+            <!-- Telephone Section -->
+            <View id="telephoneContainer" />
+            <!-- End of Telephone Section -->
+            <View id="addTelephone" class="row">
+                <View id="addTelephoneIcon" class="addFieldImage touchDisabled" />
+                <Label id="addTelephoneHeader" class="header addTelephoneText touchDisabled" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="addCaregiver" class="row">
+                <View id="addCaregiverIcon" class="addFieldImage" />
+                <Label id="addCaregiverHeader" class="header" />
+            </View>
+            <!-- Caregiver section -->
+            <View id="caregiverContainer">
+                <View id="caregiverHeader">
+                    <Label id="caregiverHeaderLabel" />
+                </View>
+                <View id="caregiverName" class="row">
+                    <View id="caregiverFirstName" class="half left">
+                        <Label id="caregiverFirstNameHeader" class="header firstNameText" />
+                        <TextField id="caregiverFirstNameLabel" class="value" />
+                    </View>
+                    <View id="divider" class="verticalDivider" />
+                    <View id="caregiverLastName" class="half right">
+                        <Label id="caregiverLastNameHeader" class="header lastNameText" />
+                        <TextField id="caregiverLastNameLabel" class="value" />
+                    </View>
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverRelation" class="row">
+                    <Label id="caregiverRelationHeader" class="header" />
+                    <TextField id="caregiverRelationLabel" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverSameAddressAsPatient" class="row">
+                    <Label id="caregiverSameAddressAsPatientHeader" class="header" />
+                    <Switch id="caregiverSameAddressAsPatientSwitch" class="toggle" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverAddress1" class="row">
+                    <Label id="caregiverAddress1Header" class="header addressLineText" />
+                    <TextField id="caregiverAddress1Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverAddress2" class="row">
+                    <Label id="caregiverAddress2Header" class="header addressLineText" />
+                    <TextField id="caregiverAddress2Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverCityState" class="row">
+                    <View id="caregiverCity" class="half left">
+                        <Label id="caregiverCityHeader" class="header cityText" />
+                        <TextField id="caregiverCityLabel" class="value" />
+                    </View>
+                    <View id="verticalDivider" class="verticalDivider" />
+                    <View id="caregiverState" class="half right">
+                        <Label id="caregiverStateHeader" class="header stateText touchDisabled" />
+                        <Label id="caregiverStateLabel" class="hintText touchDisabled" />
+                        <Label id="caregiverStateText" class="labelText touchDisabled" />
+                        <View id="caregiverSelectImage" class="selectImage touchDisabled" />
+                    </View>
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverZipEmail" class="row">
+                    <View id="caregiverZipcode" class="half left">
+                        <Label id="caregiverZipcodeHeader" class="header zipcodeText" />
+                        <TextField id="caregiverZipcodeLabel" class="number" />
+                    </View>
+                    <View id="verticalDivider" class="verticalDivider" />
+                    <View id="caregiverEmail" class="half right">
+                        <Label id="caregiverEmailHeader" class="header emailText" />
+                        <TextField id="caregiverEmailLabel" class="value" />
+                    </View>
+                </View>
+                <View id="divider" class="divider" />
+                <View id="caregiverTelephoneContainer" />
+                <View id="caregiverAddTelephone" class="row">
+                    <View id="caregiverAddTelephoneIcon" class="addFieldImage touchDisabled" />
+                    <Label id="caregiverAddTelephoneHeader" class="header addTelephoneText touchDisabled" />
+                </View>
+                <View id="divider" class="divider" />
+            </View>
+        </View>
+    </ScrollView>
+</Alloy>

@@ -1,0 +1,22 @@
+<Alloy>
+    <ScrollView id="dialog">
+        <View id="headerView" class="container">
+            <TextField id="telephoneField" class="inputField" />
+            <TextField id="emailField" class="inputField" />
+            <TextField id="address1Field" class="inputField" />
+            <TextField id="address2Field" class="inputField" />
+            <TextField id="cityField" class="inputField" />
+            <View id="stateView" class="inputField">
+                <Label id="stateLabel" class="selectorLabel" />
+                <View class="dropdownView" />
+            </View>
+            <TextField id="zipcodeField" class="inputField">
+                <Label class="requiredLabel" />
+            </TextField>
+        </View>
+        <View id="bottomView" class="container">
+            <Button id="bottomBackButton" />
+            <Button id="bottomNextButton" />
+        </View>
+    </ScrollView>
+</Alloy>

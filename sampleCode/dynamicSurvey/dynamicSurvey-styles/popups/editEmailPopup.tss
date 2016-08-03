@@ -1,0 +1,49 @@
+'#popup': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.colors.white
+},
+'#saveButton': {
+	title: L('common_save')
+},
+'#form': {
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Ti.UI.SIZE,
+	borderColor: Alloy.Globals.colors.veryLighterGrey,
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.colors.white,
+	layout: 'vertical'
+},
+'#emailHeader': {
+	text: L('common_email')
+},
+'.row': {
+	height: 44,
+	width: Ti.UI.FILL
+},
+'.header': {
+	left: 10,
+	height: Ti.UI.FILL,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.matterhorn
+},
+'.value': {
+	right: 10,
+	height: 44,
+	width: Ti.UI.FILL,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.regular,
+		fontSize: 16
+	},
+	color: Alloy.Globals.colors.grey,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	hintTextColor: Alloy.Globals.colors.silver,
+	hintText: L('common_enter')
+}

@@ -1,0 +1,59 @@
+<Alloy>
+    <View id="weeklyMetricsContainer">
+        <View class="weeklyMetrics metricsDetailViewBottom">
+
+            <View class="weeklyMetricsInner">
+                <Label id="weeklyMetricsHeader" class="metricsHeader" />
+                <View id="weeklyMetricsSubHeader" class="metricsSubHeader">
+                    <Label id="weeklyMetricsGoalLabel" class="goalHeader" />
+                    <Label id="weeklyMetricsGoalValue" />
+                </View>
+                <View id="weeklyInfo" class="weeklyInfo">
+
+                    <View id="week1Control" class="weekControl">
+                        <Label id="week1Header" class="weekHeader" />
+                        <View id="week1Shape" class="monthShape">
+                            <Label id="week1Number" class="monthNumber" />
+                        </View>
+                    </View>
+                    <View class="weekControl">
+                        <Label id="week2Header" class="weekHeader" />
+                        <View id="week2Shape" class="monthShape">
+                            <Label id="week2Number" class="monthNumber" />
+                        </View>
+                    </View>
+                    <View class="weekControl">
+                        <Label id="week3Header" class="weekHeader" />
+                        <View id="week3Shape" class="monthShape">
+                            <Label id="week3Number" class="monthNumber" />
+                        </View>
+                    </View>
+                    <View class="weekControl">
+                        <Label id="week4Header" class="weekHeader" />
+                        <View id="week4Shape" class="monthShape">
+                            <Label id="week4Number" class="monthNumber" />
+                        </View>
+                    </View>
+                    <View class="weekControl">
+                        <Label id="week5Header" class="weekHeader" />
+                        <View id="week5Shape" class="monthShape">
+                            <Label id="week5Number" class="monthNumber" />
+                        </View>
+                    </View>
+                </View>
+            </View>
+            <View class='verticalLineView' />
+            <View class="weeklyMetricsStat">
+                <View class="weeklyMetricsNumbers">
+                    <Label id="metricsBNumberOne" class="metricsBNumber" />
+                    <Label id="metricsBLabelOne" class="metricsBLabel" />
+                </View>
+                <View class="weeklyMetricsNumbers">
+                    <Label id="metricsBNumberTwo" class="metricsBNumber" />
+                    <Label id="metricsBLabelTwo" class="metricsBLabel" />
+                </View>
+            </View>
+        </View>
+        <View id="bottomLine" />
+    </View>
+</Alloy>

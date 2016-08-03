@@ -1,0 +1,74 @@
+'#itemView': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+},
+'#questionView': {
+	top: 12,
+	left: 13,
+	right: 13,
+	height: Ti.UI.SIZE,
+	backgroundColor: Alloy.Globals.colors.white,
+	borderRadius: 3,
+	layout: 'vertical'
+},
+'#questionLabel': {
+	top: 38,
+	left: 19,
+	right: 19,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 22
+	},
+	color: Alloy.Globals.colors.thunder	
+},
+'#answerView': {
+	top: 54,
+	left: 19,
+	right: 19,
+	bottom: 43,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+'#answerDetailView': {
+	top: 12,
+	left: 13,
+	right: 13,
+	height: Ti.UI.SIZE,
+	backgroundColor: Alloy.Globals.colors.white,
+	borderRadius: 3
+},
+'#footerView': {
+	top: 20,
+	bottom: 40,
+	left: 0,
+	right: 0,
+	height: Ti.UI.SIZE
+},
+'#backButton': {
+	left: 31,
+	width: 120,
+	height: 40,
+	title: L('common_back'),
+	backgroundColor: Alloy.Globals.colors.turquoiseBlue,
+	action: 'navBack'
+},
+'#nextButton': {
+	right: 31,
+	width: 120,
+	height: 40,
+	title: L('common_next'),
+	backgroundColor: Alloy.Globals.colors.turquoiseBlue,
+	action: 'navForward'
+},
+'#finishButton': {
+	right: 31,
+	width: 120,
+	height: 40,
+	title: L('common_finish'),
+	backgroundColor: Alloy.Globals.colors.turquoiseBlue,
+	action: 'finishSurvey'
+}

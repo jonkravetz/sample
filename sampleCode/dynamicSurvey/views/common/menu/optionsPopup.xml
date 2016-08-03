@@ -1,0 +1,33 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="optionsListView">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="name" id="header" />
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="templateGray" name="itemTemplateGray">
+                    <View id="row">
+                        <Label bindId="name" id="headerGray" />
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="templateRed" name="itemTemplateRed">
+                    <View id="row">
+                        <Label bindId="name" id="headerRed" />
+                        <View id="bottomBorder" />
+                    </View>
+                </ItemTemplate>
+                <ItemTemplate id="templateInfo" name="itemTemplateInfo">
+                    <View id="row">
+                        <Label bindId="name" id="headerInfo" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+            <FooterView>
+                <View id="footer" />
+            </FooterView>
+        </ListView>
+    </View>
+</Alloy>

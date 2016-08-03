@@ -1,0 +1,26 @@
+<Alloy>
+    <View id="popup">
+        <View id="form">
+            <View id="hcp" class="row">
+                <Label id="hcpHeader" class="header" />
+                <Label id="hcpLabel" class="hintText" />
+                <Label id="hcpText" class="labelText" />
+                <View id="selectImage" class="selectImage" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="condition" class="row">
+                <Label id="conditionHeader" class="header" />
+                <Label id="conditionLabel" class="hintText" />
+                <Label id="conditionText" class="labelText" />
+                <View id="selectImage" class="selectImage" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="treatment" class="row">
+                <Label id="treatmentHeader" class="header" />
+                <Label id="treatmentLabel" class="hintText" />
+                <Label id="treatmentText" class="labelText" />
+                <View id="selectImage" class="selectImage" />
+            </View>
+        </View>
+    </View>
+</Alloy>

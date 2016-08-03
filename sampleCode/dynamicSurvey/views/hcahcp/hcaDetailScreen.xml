@@ -1,0 +1,73 @@
+<Alloy>
+    <View id="wrapper">
+        <View id="detailView">
+            <Label id="nameLabel" />
+            <View id="phoneView" class="detailItem">
+                <View id="phoneIcon" class="detailIcon" />
+                <Label id="phoneLabel" class="detailLabel" />
+            </View>
+            <View id="emailView" class="detailItem">
+                <View id="emailIcon" class="detailIcon" />
+                <Label id="emailLabel" class="detailLabel" />
+            </View>
+            <View id="addressListContainer">
+                <ListView id="addressListView">
+                    <Templates>
+                        <ItemTemplate id="template" name="addressTemplateActive">
+                            <View id="container" class="detailItem">
+                                <View id="addressIcon" class="detailIcon" />
+                                <Label bindId="Address" id="addressLabel" class="detailLabelBlue" />
+                                <View bindId="Button" id="siteAgreementButtonActive">
+                                    <Label bindId="ButtonLabel" id="siteAgreementLabelActive" />
+                                    <View bindId="ButtonIcon" id="siteAgreementIcon" />
+                                </View>
+                            </View>
+                        </ItemTemplate>
+                        <ItemTemplate id="template" name="addressTemplateInactive">
+                            <View id="container" class="detailItem">
+                                <View id="addressIcon" class="detailIcon" />
+                                <Label bindId="Address" id="addressLabel" class="detailLabelBlue" />
+                                <View bindId="Button" id="siteAgreementButtonInactive">
+                                    <Label bindId="ButtonLabel" id="siteAgreementLabelInactive" />
+                                </View>
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection/>
+                </ListView>
+            </View>
+        </View>
+        <View id="touchArea">
+            <View id="expandView">
+                <Label id="expandLabel" />
+                <View id="expandIcon" />
+            </View>
+            <View id="actionView" />
+        </View>
+        <View id="border" class="border" />
+        <View id="providerView">
+            <ListView id="providerListView" defaultItemTemplate="itemTemplate">
+                <Templates>
+                    <ItemTemplate id="template" name="itemTemplate">
+                        <View id="container">
+                            <Label bindId="Name" id="providerNameLabel" />
+                            <View id="providerPhoneContainer">
+                                <View id="providerPhoneIcon" />
+                                <Label bindId="Phone" id="providerPhoneLabel" />
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+                <HeaderView>
+                    <View id="headerContainer">
+                        <Label id="headerLabel" />
+                    </View>
+                </HeaderView>
+                <ListSection/>
+                <FooterView>
+                    <View id="footerContainer" />
+                </FooterView>
+            </ListView>
+        </View>
+    </View>
+</Alloy>

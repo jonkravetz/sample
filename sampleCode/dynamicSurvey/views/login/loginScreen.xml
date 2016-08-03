@@ -1,0 +1,10 @@
+<Alloy>
+    <View id="dialog">
+        <View id="loginView">
+            <View id="pemsLogoView" />
+            <Button id="loginButton" />
+            <Label id="loginLabel" />
+        </View>
+        <View id="azLogoView" />
+    </View>
+</Alloy>

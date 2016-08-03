@@ -1,0 +1,9 @@
+<Alloy>
+    <View id="answerView">
+        <View id="followupQuestionView">
+            <Label id="questionTextLabel" class="text" />
+            <Label id="clarificationTextLabel" class="text" />
+        </View>
+        <View id="followupAnswerView" />
+    </View>
+</Alloy>

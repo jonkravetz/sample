@@ -1,0 +1,151 @@
+<Alloy>
+    <ScrollView id="popup">
+        <View id="form">
+            <View id="title" class="row">
+                <Label id="titleHeader" class="header" />
+                <Label id="titleHintText" class="hintText" />
+                <Label id="titleLabel" class="labelText" />
+                <View id="activityTypeRightArrow" class="rightArrow" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="activityType" class="row">
+                <Label id="activityTypeHeader" class="header" />
+                <Label id="activityTypeLabel" class="hintText" />
+                <Label id="activityTypeText" class="labelText" />
+                <View id="activityTypeRightArrow" class="rightArrow" />
+            </View>
+            <View id="divider" class="divider" />
+            <View id="ptoAppointmentSection">
+                <View id="startDateTime" class="row">
+                    <Label id="startDateTimeHeader" class="header" />
+                    <Label id="startDateTimeLabel" class="hintText" />
+                    <Label id="startDateTimeText" class="labelText" />
+                    <View class="rightArrow" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="endDateTime" class="row">
+                    <Label id="endDateTimeHeader" class="header" />
+                    <Label id="endDateTimeLabel" class="hintText" />
+                    <Label id="endDateTimeText" class="labelText" />
+                    <View class="rightArrow" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="location" class="row">
+                    <Label id="locationHeader" class="header" />
+                    <TextField id="locationLabel" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="address1" class="row">
+                    <Label id="address1Header" class="header" />
+                    <TextField id="address1Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="address2" class="row">
+                    <Label id="address2Header" class="header" />
+                    <TextField id="address2Label" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="city" class="row">
+                    <Label id="cityHeader" class="header" />
+                    <TextField id="cityLabel" class="value" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="stateZip" class="row">
+                    <View id="state" class="half" left="0">
+                        <Label id="stateHeader" class="header" />
+                        <Label id="stateLabel" class="hintText" />
+                        <Label id="stateText" class="labelText" />
+                        <View class="rightArrow" />
+                    </View>
+                    <View id="verticalDivider" class="verticalDivider" />
+                    <View id="zipcode" class="half" right="0">
+                        <Label id="zipcodeHeader" class="header" />
+                        <TextField id="zipcodeLabel" class="number" />
+                    </View>
+                </View>
+                <View id="divider" class="divider" />
+                <View id="status" class="row">
+                    <Label id="statusHeader" class="header" />
+                    <TextField id="statusLabel" class="value" />
+                </View>
+            </View>
+            <View id="inserviceSection">
+                <View id="dateTime" class="row">
+                    <Label id="dateTimeHeader" class="header" />
+                    <Label id="dateTimeLabel" class="hintText" />
+                    <Label id="dateTimeText" class="labelText" />
+                    <View class="rightArrow" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="duration" class="row">
+                    <Label id="durationHeader" class="header" />
+                    <Label id="durationLabel" class="hintText" />
+                    <Label id="durationText" class="labelText" />
+                    <View class="rightArrow" />
+                </View>
+
+                <View id="divider" class="divider" />
+                <View id="inserviceLocation" class="row" height="45">
+                    <Label id="inserviceLocationHeader" class="header" />
+                    <Label id="inserviceLocationLabel" class="hintText" />
+                    <Label id="inserviceLocationText" class="labelText" />
+                    <View class="rightArrow" />
+                </View>
+
+                <View id="patientPhoneGroup">
+                    <View class="divider" />
+                    <View id="patientPhone" class="row">
+                        <Label id="patientPhoneHeader" class="header" />
+                        <TextField id="patientPhoneLabel" class="number" />
+                    </View>
+                </View>
+
+                <View id="hcaGroup">
+                    <View id="divider" class="divider" />
+                    <View id="hcaLocation" class="row">
+                        <Label id="hcaLocationHeader" class="header" />
+                        <Label id="hcaLocationLabel" class="hintText" />
+                        <Label id="hcaLocationText" class="labelText" />
+                        <View class="rightArrow" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="inserviceAddress1" class="row">
+                        <Label id="inserviceAddress1Header" class="header" />
+                        <TextField id="inserviceAddress1Label" class="value" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="inserviceAddress2" class="row">
+                        <Label id="inserviceAddress2Header" class="header" />
+                        <TextField id="inserviceAddress2Label" class="value" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="inserviceCity" class="row">
+                        <Label id="inserviceCityHeader" class="header" />
+                        <TextField id="inserviceCityLabel" class="value" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="inserviceStateZip" class="row">
+                        <View id="inserviceState" class="half" left="0">
+                            <Label id="inserviceStateHeader" class="header" />
+                            <Label id="inserviceStateLabel" class="hintText" />
+                            <Label id="inserviceStateText" class="labelText" />
+                            <View class="rightArrow" />
+                        </View>
+                        <View id="verticalDivider" class="verticalDivider" />
+                        <View id="inserviceZipcode" class="half" right="0">
+                            <Label id="inserviceZipcodeHeader" class="header" />
+                            <TextField id="inserviceZipcodeLabel" class="number" />
+                        </View>
+                    </View>
+                </View>
+                <View id="statusGroup">
+                    <View id="divider" class="divider" />
+                    <View id="inserviceStatus" class="row">
+                        <Label id="inserviceStatusHeader" class="header" />
+                        <TextField id="inserviceStatusLabel" class="value" />
+                    </View>
+                </View>
+            </View>
+        </View>
+    </ScrollView>
+</Alloy>

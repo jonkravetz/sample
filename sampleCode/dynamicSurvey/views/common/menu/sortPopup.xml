@@ -1,0 +1,18 @@
+<Alloy>
+    <View id="popup">
+        <ListView id="sortListView" defaultItemTemplate="itemTemplate">
+            <Templates>
+                <ItemTemplate id="template" name="itemTemplate">
+                    <View id="row">
+                        <Label bindId="Name" id="header" />
+                        <View bindId="IsSelected" id="selectedImage" />
+                    </View>
+                </ItemTemplate>
+            </Templates>
+            <ListSection/>
+            <FooterView>
+                <View id="footer" />
+            </FooterView>
+        </ListView>
+    </View>
+</Alloy>

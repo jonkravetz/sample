@@ -1,0 +1,13 @@
+<Alloy>
+    <ScrollView id="dialog">
+        <View id="headerView">
+            <Label id="titleLabel" />
+            <View id="patientInfoView">
+                <Label id="patientLabel" />
+                <Label id="patientNameLabel" />
+            </View>
+        </View>
+        <ScrollableView id="surveyContentView" />
+        <View id="horizontalSeparator" />
+    </ScrollView>
+</Alloy>

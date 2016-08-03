@@ -1,0 +1,25 @@
+'#answerView': {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+'#textView': {
+	top: 57,
+	left: 0,
+	right: 0,
+	height: Ti.UI.SIZE
+}
+'#textLabel': {
+	top: 0,
+	left: 0,
+	right: 19,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily: Alloy.Globals.fonts.primary.medium,
+		fontSize: 22
+	},
+	color: Alloy.Globals.colors.thunder	
+
+}

@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="answerView">
+        <View id="descriptionContainer">
+            <View id="descriptionShape" />
+            <Label id="descriptionLabel" />
+        </View>
+    </View>
+</Alloy>

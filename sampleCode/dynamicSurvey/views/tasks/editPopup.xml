@@ -1,0 +1,76 @@
+<Alloy>
+    <View id="popup">
+        <ScrollView>
+            <View id="form">
+
+                <View id="title" class="row">
+                    <Label id="titleHeader" class="header" />
+                    <TextField id="titleLabel" class="value readOnly" />
+                </View>
+                <View id="divider" class="divider" />
+                <View id="date" class="row">
+                    <Label id="dateHeader" class="header" />
+                    <Label id="dateLabel" class="hintText" />
+                    <Label id="dateText" class="labelText" />
+                    <View id="selectImage" class="selectImage" />
+                </View>
+                <View id="hcaGroup" class="row">
+                    <View id="divider" class="divider" />
+                    <View id="hca" class="row">
+                        <Label id="hcaHeader" class="header" />
+                        <Label id="hcaText" class="labelText" />
+                        <View id="selectImage" class="selectImage" />
+                    </View>
+                </View>
+                <View id="addressGroup" class="row">
+                    <View id="divider" class="divider" />
+                    <View id="address1" class="row">
+                        <Label id="address1Header" class="header" />
+                        <TextField id="address1Label" class="value readOnly" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="address2" class="row">
+                        <Label id="address2Header" class="header" />
+                        <TextField id="address2Label" class="value readOnly" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="city" class="row">
+                        <Label id="cityHeader" class="header" />
+                        <TextField id="cityLabel" class="value readOnly" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="stateZip" class="row">
+                        <View id="state" class="half" left="0">
+                            <Label id="stateHeader" class="header" />
+                            <TextField id="stateText" class="value readOnly" />
+                        </View>
+                        <View id="verticalDivider" class="verticalDivider" />
+                        <View id="zipcode" class="half" right="0">
+                            <Label id="zipcodeHeader" class="header" />
+                            <TextField id="zipcodeLabel" class="number readOnly" />
+                        </View>
+                    </View>
+                </View>
+                <View id="patientGroup" class="row">
+                    <View id="divider" class="divider" />
+                    <View id="patient" class="row">
+                        <Label id="patientHeader" class="header" />
+                        <Label id="patientText" class="labelText" />
+                        <View id="selectImage" class="selectImage" />
+                    </View>
+                    <View id="divider" class="divider" />
+                    <View id="telephone" class="row">
+                        <Label id="telephoneHeader" class="header" />
+                        <TextField id="telephoneLabel" class="phone" />
+                    </View>
+                </View>
+                <View id='divider' class='divider' />
+                <View id='status' class='row'>
+                    <Label id='statusHeader' class='header' />
+                    <Label id='statusText' class='labelText' />
+                    <View id="selectImage" class="selectImage" />
+                </View>
+            </View>
+        </ScrollView>
+    </View>
+</Alloy>
